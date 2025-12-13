@@ -1,0 +1,16 @@
+# Site Settings
+title: "My Dev Blog"
+description: "Systems programming, open-source, and high-performance computing"
+author: "uminocelo"
+url: "https://uminocelo.github.io"
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+permalink: /:year/:month/:day/:title/
+
+# Kramdown options
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter: rouge
