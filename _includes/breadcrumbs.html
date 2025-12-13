@@ -1,0 +1,11 @@
+<nav class="breadcrumbs">
+  <a href="{{ '/' | relative_url }}">Homea</a>
+  {% if page.categories %}
+    {% for category in page.categories %}
+      › <a href="{{ '/categories/' | append: category | slugify | relative_url }}">{{ category }}</a>
+    {% endfor %}
+  {% endif %}
+  {% if page.title %}
+    › <span>{{ page.title }}</span>
+  {% endif %}
+</nav>
